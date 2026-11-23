@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://cvcj7qm3vq0rp"]
+
+[ext_resource type="PackedScene" uid="uid://rckb72mx70ou" path="res://player.tscn" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://cmg4btrub7esq" path="res://ball.tscn" id="2_h2yge"]
+[ext_resource type="PackedScene" uid="uid://c8eitudrklcfv" path="res://boundary.tscn" id="3_h2yge"]
+
+[node name="main" type="Node2D"]
+
+[node name="player" parent="." instance=ExtResource("1_0xm2m")]
+position = Vector2(1093, 316)
+
+[node name="ball" parent="." instance=ExtResource("2_h2yge")]
+position = Vector2(85, 244)
+
+[node name="boundary" parent="." instance=ExtResource("3_h2yge")]
