@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://b8beh2mwfce7m"]
+
+[ext_resource type="Script" uid="uid://dojtshokc05h0" path="res://death_zone.gd" id="1_2aghb"]
+[ext_resource type="Texture2D" uid="uid://dq4n3bqc241x1" path="res://assets/paddle.png" id="1_sdten"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2aghb"]
+size = Vector2(20, 677)
+
+[node name="death_zone" type="Area2D"]
+script = ExtResource("1_2aghb")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+modulate = Color(0.0312587, 0.23128, 0.275239, 1)
+self_modulate = Color(1, 0.988477, 0.985656, 1)
+position = Vector2(1190, 362)
+rotation = 1.5708
+scale = Vector2(1.2, 1.405)
+texture = ExtResource("1_sdten")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(1190, 359.5)
+shape = SubResource("RectangleShape2D_2aghb")
+debug_color = Color(0.676622, 0.504062, 0.104543, 0.42)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
