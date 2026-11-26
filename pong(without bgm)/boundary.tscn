@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=3 uid="uid://c8eitudrklcfv"]
+
+[ext_resource type="Texture2D" uid="uid://dq4n3bqc241x1" path="res://assets/paddle.png" id="1_6wonf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rd0yq"]
+size = Vector2(20, 720)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k4ho8"]
+size = Vector2(1200, 20)
+
+[node name="boundary" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(600, 10)
+scale = Vector2(1.98941, 1.40482)
+texture = ExtResource("1_6wonf")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(601, 710)
+scale = Vector2(1.98941, 1.40482)
+texture = ExtResource("1_6wonf")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(10, 362)
+rotation = 1.5708
+scale = Vector2(1.2, 1.405)
+texture = ExtResource("1_6wonf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(10, 362)
+shape = SubResource("RectangleShape2D_rd0yq")
+debug_color = Color(0.678426, 0.502331, 0.130859, 0.42)
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(600, 10)
+shape = SubResource("RectangleShape2D_k4ho8")
+debug_color = Color(0.632988, 0.526407, 0.11992, 0.42)
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
+position = Vector2(600, 710)
+shape = SubResource("RectangleShape2D_k4ho8")
+debug_color = Color(0.638337, 0.525058, 0.0563448, 0.42)
