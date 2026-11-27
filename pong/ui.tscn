@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://47dfdhauxebc"]
 
-[ext_resource type="Script" uid="uid://dxkeid2eqpcog" path="res://button.gd" id="1_fyqef"]
+[ext_resource type="Script" uid="uid://blppc2cwydhc2" path="res://menu.gd" id="1_fyqef"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xb563"]
 bg_color = Color(0, 0.4, 1, 1)
@@ -23,6 +23,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_fyqef")
 
 [node name="ColorRect" type="ColorRect" parent="Menu"]
 layout_mode = 1
@@ -57,23 +58,27 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label2" type="Label" parent="Menu/VBoxContainer"]
+modulate = Color(0.517647, 0.85098, 1, 1)
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 text = "ARCADE_EDITION🎮"
 horizontal_alignment = 1
 
 [node name="Button" type="Button" parent="Menu/VBoxContainer"]
+modulate = Color(0.517647, 0.85098, 1, 1)
 custom_minimum_size = Vector2(255, 0)
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 theme_override_styles/hover = SubResource("StyleBoxFlat_xb563")
 text = "PLAY"
-script = ExtResource("1_fyqef")
 
 [node name="Button2" type="Button" parent="Menu/VBoxContainer"]
+modulate = Color(0.517647, 0.85098, 1, 1)
 custom_minimum_size = Vector2(255, 0)
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 theme_override_styles/hover = SubResource("StyleBoxFlat_xb563")
 text = "QUIT"
-script = ExtResource("1_fyqef")
+
+[connection signal="pressed" from="Menu/VBoxContainer/Button" to="Menu" method="_on_button_pressed"]
+[connection signal="pressed" from="Menu/VBoxContainer/Button2" to="Menu" method="_on_button_2_pressed"]

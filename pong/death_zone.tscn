@@ -10,7 +10,7 @@ size = Vector2(20, 677)
 script = ExtResource("1_2aghb")
 
 [node name="Sprite2D4" type="Sprite2D" parent="."]
-modulate = Color(0.995259, 0.16541, 0.128649, 1)
+modulate = Color(0.0312587, 0.23128, 0.275239, 1)
 self_modulate = Color(1, 0.988477, 0.985656, 1)
 position = Vector2(1190, 362)
 rotation = 1.5708

@@ -20,10 +20,11 @@ config/icon="res://icon.svg"
 window/size/viewport_width=1200
 window/size/viewport_height=720
 window/size/resizable=false
+window/stretch/mode="canvas_items"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
+enabled=PackedStringArray()
 
 [global_group]
 

@@ -1,8 +1,10 @@
 extends CharacterBody2D
 
+var score =0
 
-var speed = 600.0
+var speed = 800.0
 var half_of_paddle_height = 90
+
 
 
 func _physics_process(_delta: float) -> void:
@@ -25,3 +27,5 @@ func _physics_process(_delta: float) -> void:
 	screen_height-half_of_paddle_height)
 	
 	move_and_slide()
+
+	
