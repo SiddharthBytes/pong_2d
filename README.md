@@ -26,3 +26,8 @@ in many retro games to give old players the feelings they grew with
 
 ## GENERATIVE AI USAGE
 no generative ai is used since mentioned all the assets are created by me expect for music
+
+## ACTIONS
+for moving up the paddle press **PgUp**<br>
+for moving down press **PgDn**
+
